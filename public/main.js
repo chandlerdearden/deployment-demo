@@ -7,7 +7,7 @@ btn.addEventListener('click', clickHandler)
 const btn2 = document.querySelector('#button2')
 
 const getCat = () => {
-    axios.get('http://localhost:4000/api/cat')
+    axios.get('http://ec2-35-90-123-200.us-west-2.compute.amazonaws.com/api/cat')
     .then(res => {
         alert(res.data)
     })
